@@ -1,0 +1,52 @@
+{{ partial "header.html" . }}
+<article>
+	<header>
+		<h1>{{ .Title }}</a>
+		</h1>
+	</header>
+	<ul>
+		{{ range .Data.Pages }}
+		<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+		{{ end }} sdsds
+	</ul>
+</article>{{ partial "header.html" . }}
+
+
+
+<div id="layout" class="pure-g">
+
+	{{ partial "sidebar.html" . }}
+
+	<div class="content pure-u-1 pure-u-md-3-4">
+
+		{{ partial "menu.html" . }}
+
+		<div class="posts">
+			<h1 class="content-subhead">Recent Posts</h1>
+			{{ range .Data.Pages }}
+				<section class="post" >
+					<header class="post-header">
+
+						<a href="{{ .Permalink }}">
+							<h2 class="post-title">{{.Title}}</h2>
+						</a>
+						<p class="post-meta">
+							{{.Date}} under
+							<a class="post-category post-category-js" *ngFor="let tag of tags | filterPostTags : post.tags" href="#">
+						tagname</a>
+
+					</header>
+
+					<div class="post-description">
+						<p>desc
+						</p>
+					</div>
+				</section>
+			{{ end }}
+			<button class="pure-button" (click)="loadPosts()">Load more ...</button>
+		</div>
+
+	</div>
+</div>
+
+{{ partial "footer.html" . }}
