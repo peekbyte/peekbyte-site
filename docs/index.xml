@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Peekbyte - Hassan Falahi</title>
-    <link>https://peekbyte.github.io/peekbyte.com/</link>
+    <link>https://peekbyte.github.io/peekbyte-site/</link>
     <description>Recent content on Peekbyte - Hassan Falahi</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>me@peekbyte.com (Hassan Falahi)</managingEditor>
@@ -10,15 +10,15 @@
     <copyright>(c) 2018 - 2018 Hassan Falahi -- All rights reserved.</copyright>
     <lastBuildDate>Tue, 28 Jul 2015 09:51:51 -0400</lastBuildDate>
     
-	<atom:link href="https://peekbyte.github.io/peekbyte.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://peekbyte.github.io/peekbyte-site/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>About Me</title>
-      <link>https://peekbyte.github.io/peekbyte.com/about/</link>
+      <link>https://peekbyte.github.io/peekbyte-site/about/</link>
       <pubDate>Tue, 28 Jul 2015 09:51:51 -0400</pubDate>
       <author>me@peekbyte.com (Hassan Falahi)</author>
-      <guid>https://peekbyte.github.io/peekbyte.com/about/</guid>
+      <guid>https://peekbyte.github.io/peekbyte-site/about/</guid>
       <description>About</description>
     </item>
     
