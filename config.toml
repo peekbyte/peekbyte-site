@@ -1,4 +1,4 @@
-baseURL = "https://peekbyte.github.io/peekbyte-site/"
+baseURL = "https://peekbyte.com/"
 title = "Peekbyte - Hassan Falahi"
 theme = "peekbyte"
 publishDir = "docs"
