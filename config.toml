@@ -4,7 +4,8 @@ theme = "peekbyte"
 publishDir = "docs"
 # If not set, it will not appear. Otherwise it will show below your footer links
 copyright = "(c) 2018 - 2018 Hassan Falahi -- All rights reserved."
-
+disqusShortname = "peekbyte"
+sectionPagesMenu = "main"
 
 [params]
   # Enables syntax highlighting
@@ -28,3 +29,15 @@ copyright = "(c) 2018 - 2018 Hassan Falahi -- All rights reserved."
   email = "me@peekbyte.com"
   gaid = "Your Google Analytics ID"
   twitter = "peekbyte"
+
+
+[[menu.main]]
+    name = "Home"
+    weight = 1
+    identifier = "home"
+    url = "/"
+[[menu.main]]
+    name = "Posts"
+    weight = 2
+    identifier = "posts"
+    url = "/posts"

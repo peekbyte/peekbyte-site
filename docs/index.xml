@@ -8,10 +8,19 @@
     <managingEditor>me@peekbyte.com (Hassan Falahi)</managingEditor>
     <webMaster>me@peekbyte.com (Hassan Falahi)</webMaster>
     <copyright>(c) 2018 - 2018 Hassan Falahi -- All rights reserved.</copyright>
-    <lastBuildDate>Tue, 28 Jul 2015 09:51:51 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 01 Apr 2018 00:02:03 +0430</lastBuildDate>
     
 	<atom:link href="https://peekbyte.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Going Static with Hugo</title>
+      <link>https://peekbyte.com/posts/second-post/</link>
+      <pubDate>Sun, 01 Apr 2018 00:02:03 +0430</pubDate>
+      <author>me@peekbyte.com (Hassan Falahi)</author>
+      <guid>https://peekbyte.com/posts/second-post/</guid>
+      <description>First post</description>
+    </item>
     
     <item>
       <title>About Me</title>
@@ -19,7 +28,7 @@
       <pubDate>Tue, 28 Jul 2015 09:51:51 -0400</pubDate>
       <author>me@peekbyte.com (Hassan Falahi)</author>
       <guid>https://peekbyte.com/about/</guid>
-      <description>About</description>
+      <description>I started software development with C++ and VB6 When I was a university student. Early in the 2000s, DotNet Platform was a more popular technology for creating web-based applications. So I focused on DotNet for many years and it made me experienced. Although .Net has many beneficial features such as rapid development, simple debugging and windows integrations, with the passage of the time I found new opportunities in open source languages such as Python and NodeJS.</description>
     </item>
     
   </channel>

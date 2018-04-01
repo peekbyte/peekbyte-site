@@ -1,11 +1,11 @@
-{{ partial "header.html" . }}
+{{ partial "head.html" . }}
 
 <div id="layout" class="pure-g">
 
     {{ partial "sidebar.html" . }}
 
     <div class="content pure-u-1 pure-u-md-3-4">
-        
+
         {{ partial "menu.html" . }}
 
         <div class="posts">
@@ -17,24 +17,52 @@
                     <h2 class="post-title">{{ .Title}}</h2>
 
                     <p class="post-meta">
-                        
-                        {{ .Date}} under
-
-                        <a class="post-category post-category-js" href="#">
-                            ss
-                    	</a>
+                         {{.Date.Format "2 January 2006"}} 
+                            {{ if .Params.tags }}
+                                under
+                                {{ range .Params.tags }}
+                                <a class="post-category post-category-{{ . }}"  href="/tags/{{ . | urlize }}">
+                                {{ . }}</a>
+                            {{ end }}
+                        {{ end }}   
                     </p>
                 </header>
 
                 <div class="post-description">
-                    <p >
+                    <p>
                         {{ .Content}}
                     </p>
                 </div>
             </section>
+
+            <div id="disqus_thread"></div>
+            <script>
+                /**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+                /*
+                var disqus_config = function () {
+                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+                */
+                (function () { // DON'T EDIT BELOW THIS LINE
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://peekbyte.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
         </div>
 
     </div>
 </div>
+
+<aside>
+        {{ .TableOfContents }}
+    </aside>
 
 {{ partial "footer.html" . }}

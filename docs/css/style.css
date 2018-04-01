@@ -9,12 +9,6 @@ a {
     text-decoration: none;
     color: rgb(61, 146, 201);
 }
-a:hover,
-a:focus {
-    /*text-decoration: underline;*/
-    font-weight: bold;
-    color: #13B4BE !important;
-}
 
 h3 {
     font-weight: 100;
@@ -36,7 +30,7 @@ h3 {
     margin: 3em auto;
 }
 
-.sidebar {
+.intro {
     /*background: rgb(61, 79, 93);*/
     background:#315D76;
     color: #fff;
@@ -89,9 +83,11 @@ h3 {
     letter-spacing: 0.1em;
 }
 
-.content {
+
+.content, .intro-content{
     padding: 2em 1em 0;
 }
+
 
 .post {
     padding-bottom: 2em;
@@ -166,12 +162,12 @@ h3 {
         margin-left: 25%;
     }
 
-    .header {
+    .sidebar .header {
         margin: 30% 2em 0;
         text-align: center;
     }
 
-    .header img{
+    .sidebar .header img{
         margin-bottom: 80px;
     }
 
@@ -179,6 +175,10 @@ h3 {
         position: fixed;
         top: 0;
         bottom: 0;
+    }
+
+    .top .header img{
+        margin-bottom: 30px;
     }
 }
 .about h1{
@@ -192,3 +192,12 @@ h3 {
 color:#315D76;
 
 }
+
+.pure-menu {
+     text-transform: uppercase;
+}
+
+ .pure-menu li.active a{
+      font-weight: bold;
+    color: #13B4BE !important;
+ }

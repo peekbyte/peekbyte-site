@@ -1,0 +1,22 @@
+{{ range .Data.Pages }}
+				<section class="post" >
+					<header class="post-header">
+						<a href="{{ .Permalink }}">
+							<h2 class="post-title">{{.Title}}</h2>
+						</a>
+						<p class="post-meta">
+							{{.Date.Format "2 January 2006"}} 
+                            {{ if .Params.tags }}
+                                under
+                                {{ range .Params.tags }}
+                                <a class="post-category post-category-{{ . }}"  href="/tags/{{ . | urlize }}">
+                                {{ . }}</a>
+                            {{ end }}
+                        {{ end }}
+					</header>
+                    <div class="post-description">
+						<p>     {{ .Summary }}
+						</p>
+					</div>
+				</section>
+{{ end }}
